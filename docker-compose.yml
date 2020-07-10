@@ -1,0 +1,32 @@
+version: "3.6"
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: artree-mysql
+    hostname: artree-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "appdb"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "password"
+    restart: unless-stopped
+    ports:
+      - 3311:3306
+    expose:
+      - 3311
+      - 3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+    secrets:
+      - db_root_password
+      - db_password
+
+secrets:
+  db_root_password:
+    file: db_root_password.txt
+  db_password:
+    file: db_password.txt
+
+volumes:
+  mysql-data:

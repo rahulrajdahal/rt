@@ -1,0 +1,288 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap");
+/* Variables */
+/* Global Styling */
+body {
+  padding: 0px;
+  margin: 0px auto;
+  background: #fafafa;
+  font-family: Raleway;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Playfair Display;
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #3a3a3a;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #da2d2d;
+}
+
+a:hover {
+  color: #b42525;
+}
+
+[class*="col-"] {
+  margin-bottom: 15px;
+}
+
+.page {
+  margin-top: 120px;
+  background: transparent;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+/* ---------------------------------------------------
+                  MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+  .blogBookmark {
+    position: relative !important;
+  }
+  .map {
+    display: none;
+  }
+  .blogTitle {
+    width: 100% !important;
+  }
+  .arteeCaro {
+    display: block;
+  }
+  .nav-item {
+    padding: 0;
+  }
+  .navigationAlign {
+    margin-left: 0px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Navigation */
+.arteeNav {
+  background: #ffffff !important;
+  color: #3a3a3a;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 5px #727272;
+          box-shadow: 0px 0px 5px #727272;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.navigationAlign {
+  margin-left: 400px;
+}
+
+.nav-item {
+  padding: 0px 25px;
+}
+
+.logo {
+  width: 100px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #da2d2d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.featImg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.desc {
+  position: absolute;
+  bottom: 0;
+  left: 20;
+  margin-bottom: 60px;
+}
+
+.titleHead {
+  font-size: 4em;
+}
+
+.tagHead {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* News and Updates */
+.news {
+  margin-top: 100px;
+}
+
+.card-title {
+  font-size: 12px;
+}
+
+/* Buttons */
+.btn-artee {
+  background: #da2d2d;
+  color: #ffffff;
+  padding: 5px 25px;
+  border-radius: 0px;
+  font-size: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-artee:hover {
+  color: #ffffff;
+  background: #b42525;
+}
+
+.grey {
+  background: #e3e3e3;
+  width: 100%;
+  height: 150px;
+}
+
+.redCard {
+  background: #da2d2d;
+  color: #ffffff;
+  padding: 100px 60px;
+}
+
+.map {
+  background: #3a3a3a;
+  float: right;
+  width: 500px;
+  height: 450px;
+  color: #ffffff;
+  margin-top: -50%;
+  z-index: 2;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 10px #727272;
+          box-shadow: 0px 1px 10px #727272;
+}
+
+.footer {
+  margin-top: 100px;
+  background: #212121;
+  color: #ffffff;
+  padding: 40px;
+}
+
+/* About Page */
+.aboutHead {
+  background: #da2d2d;
+  color: #fff;
+  padding: 60px 60px;
+}
+
+.aboutTagline {
+  font-size: 18px;
+  font-family: Playfair Display;
+  font-weight: bold;
+  color: #b3b3b3;
+}
+
+.team {
+  margin-toP: 40px;
+  margin-bottom: 40px;
+}
+
+.teamPic {
+  width: 128px;
+}
+
+.socialIcons {
+  color: #b3b3b3;
+}
+
+.bioLink {
+  color: #da2d2d;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Biography Page */
+.bioText {
+  text-align: justify;
+  color: #3a3a3a;
+}
+
+.teamOthers {
+  background: #fff;
+  padding: 40px;
+}
+
+/* Blog Page*/
+.blogBookmark {
+  color: #da2d2d;
+  font-size: 20px;
+  position: fixed;
+}
+
+.share {
+  padding: 0px 10px;
+}
+
+.arteeCaro {
+  background: #da2d2d;
+}
+
+.img-fluid {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogTitle {
+  width: 600px;
+  position: relative;
+  z-index: 2;
+  line-height: 1.4;
+}
+
+.arteeTable {
+  font-size: 14px;
+}
+
+.someSpace {
+  padding: 0px 10px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.eventImg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
